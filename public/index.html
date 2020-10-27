@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="styles.css" type="text/css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+  <title>Spooky Trivia</title>
+</head>
+<body>
+  <div id="start-trivia" class="container">
+    <h1>Welcome to Spooky Trivia!</h1>
+    <h2>
+      If you select the correct answer, the screen will turn green, and you'll be awarded a certain number of points (varies based on the question).
+      If you're incorrect, the screen will turn red and you'll lose the points.
+    </h2>
+    <button id="button-start" class="button">Let's Go!</button>
+  </div>
+  
+  <div id="trivia-container" class="container hidden">
+    <div>
+      <div id="question" class="question-text">
+        Question
+      </div>
+      <div id="answers" class="buttons-container">
+        <button id="button-true" class="button">True</button>
+        <button id="button-false" class="button">False</button>
+      </div>
+      <div id="points" class="points-text">
+        0 Points
+      </div>
+    </div>
+  </div>
+
+  <div id="end-trivia" class="container hidden">
+    <h1 id="final-points">You scored a total of 0 points!</h1>
+    <div class="leaderboard-container">
+      <h2>Leaderboard:</h2>
+      <ul id="leaderboard-list" class="list"></ul>
+    </div>
+    <h1>Would you like to restart?</h1>
+    <button id="button-restart" class="button">Restart!</button>
+  </div>
+</body>
+</html>
