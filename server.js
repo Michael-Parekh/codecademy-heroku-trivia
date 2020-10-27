@@ -60,6 +60,7 @@ app.post('/points', async (req, res) => {
   }
 })
 
-app.listen(5000, function() {
-  console.log('Listening on Port 5000...');
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, function() {
+  console.log(`Listening on port ${PORT}...`);
 })
